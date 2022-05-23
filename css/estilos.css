@@ -1,0 +1,185 @@
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url(../fonts/museo/MuseoSansRounded-500.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Museo Sans Rounded';
+}
+
+/* Header */
+.header__logo {
+  width: 195px;
+  height: 110px;
+}
+
+.header {
+  background-color: #136C55;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header a:link {
+  color: #fff;
+}
+
+.header a:visited {
+  color: #fff;
+}
+
+.header a:hover {
+  color: #6C132B;
+}
+
+/* /header */
+/*secciones */
+.principal {
+  border: 2px solid #136C55;
+  background-color: #fff;
+}
+
+.principal p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.carousel-mod {
+  background-color: #136C55;
+}
+
+@media all and (min-width: 768px) {
+  .carousel-control-mod {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar {
+  max-width: 30%;
+  animation-name: giro;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+}
+
+.titulos {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.subtitulos {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.assets-img {
+  max-width: 99%;
+}
+
+.btn-comprar {
+  border: 2px solid #136C55;
+  color: #136C55;
+  width: 50%;
+}
+
+.btn-comprar:hover {
+  background-color: #136C55;
+  border: 2px solid #136C55;
+}
+
+.offcanvas-mod {
+  background-color: #6C132B;
+  color: #fff;
+}
+
+.principal-mod {
+  background-color: #136C55;
+  color: #fff;
+}
+
+.mail {
+  color: #fff;
+}
+
+.mail:hover {
+  color: #6C132B;
+}
+
+.h-mod {
+  font-weight: bold;
+}
+
+.img-modal:hover {
+  opacity: 0.7;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-zoom {
+  animation-name: zoom;
+  animation-duration: 1.2s;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #136C55;
+  font-weight: bold;
+  border: none;
+}
+
+.modal-close:hover {
+  background-color: #6C132B;
+}
+
+.modal-content-pos {
+  position: absolute;
+  width: 60vw;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 768px) {
+  .modal-content-pos {
+    top: 30vh;
+    left: 50%;
+    width: 95vw;
+    transform: translate(-50%, 0%);
+  }
+}
+
+/* /secciones */
+/* footer */
+.footer-logo {
+  width: 24px;
+  height: 24px;
+}
+
+@media all and (max-width: 768px) {
+  .footer-logo {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* /footer */
