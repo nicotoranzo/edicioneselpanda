@@ -11,8 +11,8 @@ body {
 
 /* Header */
 .header__logo {
-  width: 195px;
   height: 110px;
+  width: 195px;
 }
 
 .header {
@@ -51,8 +51,8 @@ body {
 
 @media all and (min-width: 768px) {
   .carousel-control-mod {
-    width: 3rem;
     height: 3rem;
+    width: 3rem;
   }
 }
 
@@ -73,13 +73,12 @@ body {
   animation-duration: 8s;
 }
 
-.titulos {
+.titulos, .subtitulos {
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .subtitulos {
-  font-weight: bold;
   font-size: 1.1rem;
 }
 
@@ -98,14 +97,13 @@ body {
   border: 2px solid #136C55;
 }
 
-.offcanvas-mod {
+.offcanvas-mod, .principal-mod {
   background-color: #6C132B;
   color: #fff;
 }
 
 .principal-mod {
   background-color: #136C55;
-  color: #fff;
 }
 
 .mail {
@@ -113,7 +111,7 @@ body {
 }
 
 .mail:hover {
-  color: #6C132B;
+  color: #136C55;
 }
 
 .h-mod {
@@ -171,14 +169,14 @@ body {
 /* /secciones */
 /* footer */
 .footer-logo {
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 @media all and (max-width: 768px) {
   .footer-logo {
-    width: 48px;
     height: 48px;
+    width: 48px;
   }
 }
 

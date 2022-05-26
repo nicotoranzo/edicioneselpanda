@@ -1,30 +1,36 @@
 body{
     font-family: 'Museo Sans Rounded';
+    
 }
 
 /* Header */
 
+@mixin sizes($width, $height) {
+   height: $height;
+   width: $width;
+}
+
+
 .header__logo{
- width: 195px;
- height: 110px;
+    @include sizes(195px, 110px);
 }
 
 .header{
-  background-color: $color-principal;
+  background-color: map-get($colores, principal);
   font-weight: bold;
-  color: $blanco;
+  color: map-get($colores, blanco);
   a{   
     &:link
         {
-        color: $blanco; 
+        color: map-get($colores, blanco); 
     }
     &:visited
         {
-        color: $blanco; 
+        color: map-get($colores, blanco);  
     }
     &:hover
         {
-        color: $color-secundario; 
+        color: map-get($colores, secundario); 
     }
    } 
 }
@@ -34,8 +40,8 @@ body{
 /*secciones */
 
 .principal{
-    border: 2px solid $color-principal;
-    background-color: $blanco;
+    border: 2px solid map-get($colores, principal);
+    background-color: map-get($colores, blanco); 
     p{
         text-align: justify;
         text-justify: inter-word;
@@ -45,14 +51,13 @@ body{
 }
 
 .carousel-mod{
-    background-color: $color-principal;
+    background-color: map-get($colores, principal); 
 
 }
 
 @media all and (min-width: $breakpoint-tablet){ 
     .carousel-control-mod{
-    width: 3rem;
-    height: 3rem;
+        @include sizes(3rem, 3rem);
     }
 
 }
@@ -82,40 +87,44 @@ body{
 }
 
 .subtitulos{
-    font-weight: bold;
+    @extend.titulos;
     font-size: 1.1rem;
 }
+
 .assets-img{
     max-width: 99%;
 }
 
 .btn-comprar{
-    border: 2px solid $color-principal;
-    color: $color-principal;
+    border: 2px solid map-get($colores, principal); 
+    color: map-get($colores, principal); 
     width: 50%;
+    &:hover
+        {
+        background-color: map-get($colores, principal);
+        border: 2px solid map-get($colores, principal);
+
+    }
 }
 
-.btn-comprar:hover{
-    background-color: $color-principal;
-    border: 2px solid $color-principal;
-}
 
 .offcanvas-mod{
-    background-color: $color-secundario;
-    color: $blanco;
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, blanco);
 }
 
 .principal-mod{
-    background-color: $color-principal;
-    color: $blanco;
+    @extend.offcanvas-mod;
+    background-color: map-get($colores, principal);
+    
 
 }
 
 .mail{
-    color: $blanco;
+    color: map-get($colores, blanco);
     &:hover
         {
-        color: $color-secundario; 
+        color: map-get($colores, principal); 
     }
 }
 
@@ -144,11 +153,11 @@ body{
     position: absolute;
     top: 15px;
     right: 15px;
-    background-color: $color-principal;
+    background-color: map-get($colores, principal);
     font-weight: bold;
     border: none;
     &:hover{
-       background-color: $color-secundario; 
+       background-color: map-get($colores, secundario); 
     }
 }
 
@@ -174,11 +183,9 @@ body{
 /* footer */
 
 .footer-logo{
-    width: 24px;
-    height: 24px;
+    @include sizes(24px, 24px);
     @media all and (max-width: $breakpoint-tablet){
-        width: 48px;
-        height: 48px;
+        @include sizes(48px, 48px);
     }
 }
 
