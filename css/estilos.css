@@ -75,11 +75,11 @@ body {
 
 .titulos, .subtitulos {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .subtitulos {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .assets-img {
@@ -112,10 +112,6 @@ body {
 
 .mail:hover {
   color: #136C55;
-}
-
-.h-mod {
-  font-weight: bold;
 }
 
 .img-modal:hover {

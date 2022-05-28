@@ -83,12 +83,12 @@ body{
 
 .titulos{
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .subtitulos{
     @extend.titulos;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .assets-img{
@@ -129,10 +129,6 @@ body{
 }
 
 
-
-.h-mod{
-    font-weight: bold;
-}
 
 .img-modal{
     &:hover{
