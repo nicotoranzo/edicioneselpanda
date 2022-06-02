@@ -174,6 +174,10 @@ body{
     
 }
 
+.icons{
+    @include sizes(25%, 25%);
+}
+
 /* /secciones */
 
 /* footer */
@@ -181,7 +185,7 @@ body{
 .footer-logo{
     @include sizes(24px, 24px);
     @media all and (max-width: $breakpoint-tablet){
-        @include sizes(48px, 48px);
+        @include sizes(36px, 36px);
     }
 }
 

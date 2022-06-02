@@ -162,6 +162,11 @@ body {
   }
 }
 
+.icons {
+  height: 25%;
+  width: 25%;
+}
+
 /* /secciones */
 /* footer */
 .footer-logo {
@@ -171,8 +176,8 @@ body {
 
 @media all and (max-width: 768px) {
   .footer-logo {
-    height: 48px;
-    width: 48px;
+    height: 36px;
+    width: 36px;
   }
 }
 
