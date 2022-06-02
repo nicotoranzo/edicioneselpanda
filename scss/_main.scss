@@ -44,7 +44,7 @@ body{
     background-color: map-get($colores, blanco); 
     p{
         text-align: justify;
-        text-justify: inter-word;
+        text-justify: inter-character;
 
     }
 
@@ -97,8 +97,8 @@ body{
 
 .btn-comprar{
     border: 2px solid map-get($colores, principal); 
-    color: map-get($colores, principal); 
-    width: 50%;
+    color: map-get($colores, principal);
+    width: 100%;
     &:hover
         {
         background-color: map-get($colores, principal);
