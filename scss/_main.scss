@@ -107,6 +107,11 @@ body{
     }
 }
 
+.btn-modal{
+    @extend.btn-comprar;
+    width: 50%
+}
+
 
 .offcanvas-mod{
     background-color: map-get($colores, secundario);

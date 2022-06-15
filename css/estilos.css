@@ -86,15 +86,19 @@ body {
   max-width: 99%;
 }
 
-.btn-comprar {
+.btn-comprar, .btn-modal {
   border: 2px solid #136C55;
   color: #136C55;
   width: 100%;
 }
 
-.btn-comprar:hover {
+.btn-comprar:hover, .btn-modal:hover {
   background-color: #136C55;
   border: 2px solid #136C55;
+}
+
+.btn-modal {
+  width: 50%;
 }
 
 .offcanvas-mod, .principal-mod {

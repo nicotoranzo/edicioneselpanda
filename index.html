@@ -10,7 +10,6 @@
 	<link rel="icon" href="fotos/avatar.png">
 </head>
 <body>
-
 	<!-- Header -->
 	<div class="container principal sticky-top mb-3">
 		<div class="navbar navbar-expand-lg">
@@ -41,10 +40,10 @@
 		  	</div>
 		</div>
 	</div>
+
 	<!-- /Header -->
 
 	<!-- Carousel -->
-
 	<div class="container carousel-mod mb-3">
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 		  	<div class="carousel-inner">
@@ -70,6 +69,7 @@
 	</div>
 
 	<!-- /Carousel -->
+
 	<!-- Seccion -->
 	<div class="container principal pt-2 mb-3">
 		<div class="row">
@@ -100,7 +100,9 @@
         					<textarea class="col-12 col-lg-9 mb-2 principal" id='mensaje' name='mensaje' placeholder="Dejanos tu mensaje"></textarea>
         				</div>
         				<div class='row mb-3'>
-        	  			<button class="col-12 principal">Enviar</button>
+        	  			<button type="button" class="col-12 principal" data-bs-toggle="modal" href="#formIndex">
+        	  				Enviar
+        	  			</button>
 						</div>  
 					</form>
 				</div>
@@ -109,6 +111,23 @@
 	</div>
 
 	<!-- /Seccion -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="formIndex" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+	    	<div class="modal-content principal">
+	    		<div class="modal-body">
+	        		¡Gracias por contactarnos! Te responderemos a la brevedad.
+	      		</div>
+	      		<div class="modal-footer d-flex justify-content-center">
+	        		<button type="button" class="btn btn-modal" data-bs-dismiss="modal">Cerrar</button>
+	       		</div>
+	    	</div>
+	  	</div>
+	</div>
+
+	<!-- /Modal -->
+	
 	<!-- Footer -->
 	<div class="container principal d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
 		<div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start align-items-center mb-2 h4">Nicolás Toranzo - 2022</div>
