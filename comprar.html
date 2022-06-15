@@ -127,23 +127,23 @@
 			<div class="col-12 mb-3 ">
 				<div class="container">
 					<form action='formulario.html' method='POST' enctype="multipart/form-data">
-						<div class="titulos mb-3 p-1">Compra y envío
+						<div class="titulos mb-3 p-1">Comprá y te lo enviamos
 						</div>
 						<div class='row col-sm-12 mb-1'>
 				        	<label class="form-label col-12 col-lg-4" for='nombre'>Nombre:</label>
 				        	<input class="col-12 col-lg-8" id='nombre' name='full-name' type='text'/>
 				        </div>
 				        <div class='row col-sm-12 mb-1'>
-				        	<label class="form-label col-12 col-lg-3" for='mail'>E-Mail:</label>
-				        	<input class="col-12 col-lg-9" id='mail' name='mail' type='email' placeholder="hola@ejemplo.com" />
-				        	</div>	
-						<div class='row col-sm-12 mb-1'>
 				        	<label class="form-label col-12 col-lg-4" for='telefono'>Teléfono:</label>
 				        	<input class="col-12 col-lg-8" id='telefono' name='telefono' type='text'/>
-				        </div>   				        			
+				        </div> 
+				        <div class='row col-sm-12 mb-1'>
+				        	<label class="form-label col-12" for='mail'>E-Mail:</label>
+				        	<input class="col-12" id='mail' name='mail' type='email' placeholder="hola@ejemplo.com" />
+				        	</div>	  				        	
 				        <div class="row mb-1">
-				        	<label class="form-label col-12 col-lg-3" for='provincia'>Provincia:</label>
-					        <select id="provincia" class="form-select" aria-label="Default select example">
+				        	<label class="form-label col-12" for='provincia'>Provincia:</label>
+					        <select id="provincia" class="form-select col-12" aria-label="Default select example">
 	  							<option selected>Selecciona la provincia</option>
 	  							<option value="1">Buenos Aires</option>
 	  							<option value="2">CABA</option>
@@ -188,7 +188,7 @@
 				        	<input class="col-12 col-lg-7" id='depto' name='depto' type='text'/>
 				        </div>				        								        				
 				        <div class='row mb-3'>
-				        	<button type="button" class="col-12" data-bs-toggle="modal" href="#formCompraEnvio">Enviar</button>
+				        	<button type="button" class="col-12 btn-form-mod" data-bs-toggle="modal" href="#formCompraEnvio">Enviar</button>
 						</div>  
 					</form>
 				</div>
@@ -220,26 +220,27 @@
 	<div class="offcanvas offcanvas-end offcanvas-mod" tabindex="-1" id="offcanvasRight-retiro" aria-labelledby="offcanvasRightLabel">
 	  	<div class="offcanvas-header">
 	   		<h1 id="offcanvasRightLabel" class="titulos">Completa el formulario</h1>
-	    	<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	    	<button type="button" class="btn-close text-reset	" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	  	</div>
 	  	<div class="offcanvas-body">
 			<div class="col-12 mb-3 ">
 				<div class="container">
 					<form action='formulario.html' method='POST' enctype="multipart/form-data">
-						<div class="titulos mb-3 p-1">¡Compra y retira!
+						<div class="titulos mb-3 p-1">¡Comprá y retirá!
 						</div>
 						<div class='row col-sm-12 mb-1'>
 				        	<label class="form-label col-12 col-lg-4" for='nombre'>Nombre:</label>
 				        	<input class="col-12 col-lg-8" id='nombre' name='full-name' type='text'/>
 				        </div>
-				        <div class='row mb-1'>
-				        	<label class="form-label col-12 col-lg-3" for='mail'>E-Mail:</label>
-				        	<input class="col-12 col-lg-9" id='mail' name='mail' type='email' placeholder="hola@ejemplo.com" />
-				        </div>
-						<div class='row col-sm-12 mb-1'>
+				        <div class='row col-sm-12 mb-1'>
 				        	<label class="form-label col-12 col-lg-4" for='telefono'>Teléfono:</label>
 				        	<input class="col-12 col-lg-8" id='telefono' name='telefono' type='text'/>
 				        </div>
+				        <div class='row mb-1'>
+				        	<label class="form-label col-12" for='mail'>E-Mail:</label>
+				        	<input class="col-12" id='mail' name='mail' type='email' placeholder="hola@ejemplo.com" />
+				        </div>
+
 				        <div class='row col-sm-12 mb-1'>Punto de Retiro:
 				        </div>
 				        <div class='row col-sm-12 mb-1'>
@@ -255,7 +256,7 @@
 							</div>
 						</div>
 				        <div class='row mb-3'>
-				        	<button type="button" class="col-12" data-bs-toggle="modal" href="#formCompraRetiro">Enviar</button>
+				        	<button type="button" class="col-12 btn-form-mod" data-bs-toggle="modal" href="#formCompraRetiro">Enviar</button>
 						</div>  
 					</form>
 				</div>
@@ -268,7 +269,7 @@
 			<div class="modal-dialog modal-dialog-centered">
 		    	<div class="modal-content principal">
 		    		<div class="modal-body">
-		        		¡Gracias por tu compra! A la brevedad te enviaremos un mail con los datos para que puedas retirar tu libro
+		        		¡Gracias por tu compra! A la brevedad te enviaremos un mail con los datos para que puedas retirar tu libro.
 		      		</div>
 		      		<div class="modal-footer d-flex justify-content-center">
 		        		<button type="button" class="btn btn-modal" data-bs-dismiss="modal">

@@ -86,19 +86,27 @@ body {
   max-width: 99%;
 }
 
-.btn-comprar, .btn-modal {
+.btn-form, .btn-comprar, .btn-modal, .btn-form-mod {
   border: 2px solid #136C55;
+}
+
+.btn-form:hover, .btn-comprar:hover, .btn-modal:hover, .btn-form-mod:hover {
+  background-color: #136C55;
+  color: #fff;
+  border: 2px solid #136C55;
+}
+
+.btn-comprar, .btn-modal {
   color: #136C55;
   width: 100%;
 }
 
-.btn-comprar:hover, .btn-modal:hover {
-  background-color: #136C55;
-  border: 2px solid #136C55;
-}
-
 .btn-modal {
   width: 50%;
+}
+
+.btn-form-mod {
+  border: 2px solid #000;
 }
 
 .offcanvas-mod, .principal-mod {
