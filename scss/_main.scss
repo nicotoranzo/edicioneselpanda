@@ -129,6 +129,19 @@ body{
     color: map-get($colores, blanco);
 }
 
+.offcanvas-btn-close{
+    color: map-get($colores, blanco);
+    background-color: map-get($colores, secundario);
+    border: none;
+    font-weight: bold;
+    &:hover
+        {
+         color: map-get($colores, principal);
+         font-size: 1.3rem;
+         background-color: map-get($colores, blanco)   
+    }
+}
+
 .principal-mod{
     @extend.offcanvas-mod;
     background-color: map-get($colores, principal);

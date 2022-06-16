@@ -114,6 +114,19 @@ body {
   color: #fff;
 }
 
+.offcanvas-btn-close {
+  color: #fff;
+  background-color: #6C132B;
+  border: none;
+  font-weight: bold;
+}
+
+.offcanvas-btn-close:hover {
+  color: #136C55;
+  font-size: 1.3rem;
+  background-color: #fff;
+}
+
 .principal-mod {
   background-color: #136C55;
 }
