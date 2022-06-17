@@ -131,12 +131,16 @@ body {
   background-color: #136C55;
 }
 
-.mail {
+.mail, .links {
   color: #fff;
 }
 
-.mail:hover {
+.mail:hover, .links:hover {
   color: #136C55;
+}
+
+.links:hover {
+  color: #6C132B;
 }
 
 .img-modal:hover {
@@ -218,6 +222,17 @@ body {
   height: 25%;
   width: 25%;
   animation: shake 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite both;
+}
+
+.bocetos {
+  height: 280px;
+  width: 182px;
+}
+
+@media all and (max-width: 768px) {
+  .bocetos {
+    display: none;
+  }
 }
 
 /* /secciones */

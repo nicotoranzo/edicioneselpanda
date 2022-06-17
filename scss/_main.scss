@@ -157,7 +157,13 @@ body{
     }
 }
 
-
+.links{
+    @extend.mail;
+    &:hover
+        {
+        color: map-get($colores, secundario);    
+    }
+}
 
 .img-modal{
     &:hover{
@@ -233,6 +239,13 @@ body{
 .icons{
     @include sizes(25%, 25%);
     animation: shake 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.bocetos{
+    @include sizes(182px, 280px);
+    @media all and (max-width: $breakpoint-tablet){
+        display: none;
+    }
 }
 
 
