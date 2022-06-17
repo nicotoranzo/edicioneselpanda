@@ -136,7 +136,7 @@ body{
     font-weight: bold;
     &:hover
         {
-         color: map-get($colores, principal);
+         color: map-get($colores, secundario);
          font-size: 1.3rem;
          background-color: map-get($colores, blanco)   
     }
