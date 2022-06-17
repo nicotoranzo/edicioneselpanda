@@ -44,7 +44,7 @@ body{
     background-color: map-get($colores, blanco); 
     p{
         text-align: justify;
-        text-justify: inter-character;
+        text-justify: auto;
 
     }
 
